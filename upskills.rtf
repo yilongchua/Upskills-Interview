@@ -1,0 +1,390 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf840
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f3\fmodern\fcharset0 CourierNewPSMT;\f4\fmodern\fcharset0 Courier;\f5\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red106\green0\blue67;
+\red49\green72\blue177;\red109\green141\blue177;\red0\green0\blue233;\red50\green110\blue76;\red0\green0\blue178;
+\red108\green106\blue141;\red255\green255\blue11;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c49804\c0\c33333;
+\cssrgb\c24706\c37255\c74902;\cssrgb\c49804\c62353\c74902;\cssrgb\c0\c0\c93333;\cssrgb\c24706\c49804\c37255;\cssrgb\c0\c0\c75294;
+\cssrgb\c49804\c49804\c62353;\cssrgb\c100000\c100000\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh20180\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Candidate name:\'a0\'a0\'a0Chua Yi Long
+\f1\fs24 \AppleTypeServices \cb1 \
+
+\f0\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 Interview date:\'a0\'a0\'a0\'a024 Apr 2020\
+\
+Qns 1:\
+\
+def geometric(a,r,n):\
+    amt = 0\
+    i = 0\
+    ls = []\
+    while i < n : \
+        ls.append(a)\
+        amt = amt + a \
+        a = a * r \
+        i = i + 1\
+    word = (' + '.join(str(x) for x in ls))   \
+    return print('Output will be sum of \{\} = \{\}'.format(word,amt))\
+                 \
+a = 2 \
+r = 3 \
+n = 4 \
+          \
+geometric(a, r, n)\
+\
+Qns 2:\
+def atm(withdraw, notes=[50,100,200,500]):\
+    amt = None\
+    if withdraw < min(notes):\
+        print('Withdraw higher amount')\
+    else:\
+        for n in notes:\
+            if n == withdraw: return n\
+            if n < withdraw:\
+                amt = n\
+    balance = round(withdraw - amt,2)\
+    print('money notes of \{\}'.format(amt))\
+    return atm(balance)\
+\
+atm(3350)Hi\
+\
+\
+\
+
+\f1\fs24 \AppleTypeServices \cb1 Qns 3B:\
+\
+def reverse(word):\
+    length = len(word)\
+    print(word[length::-1])\
+\
+reverse('asdfghj')\
+\
+\
+Qns 4:\
+\
+from collections import Counter\
+def word_counter(para):\
+    ls = []\
+    para = para.split()\
+    count=Counter(para)\
+    for key, value in count.items():\
+        if value == max(count.values()):\
+            ls.append(key)\
+    print(ls)\
+\
+test = 'I want to know how to achieve the things I want'\
+word_counter(test)\
+\
+Qns5:\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \cb3 \strokec4 package
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0com.upskills.tvo;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 /**\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0*\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf6 \strokec6 @author
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \strokec5 \'a0{\field{\*\fldinst{HYPERLINK "http://cslibrary.stanford.edu/110/BinaryTrees.html#java"}}{\fldrslt \cf7 \ul \ulc7 \strokec7 http://cslibrary.stanford.edu/110/BinaryTrees.html#java}}
+\f0 \AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0*/\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \cb3 \strokec4 public
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 class
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0BinaryTree \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0
+\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \strokec8 // Root node pointer. Will be null for an empty tree.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 private
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0Node\'a0\cf9 \strokec9 root\cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0
+\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \strokec8 /*\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb3 \strokec8 \'a0\'a0\'a0\'a0 * --Node-- The binary tree is built using this nested node class. Each node\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb3 \strokec8 \'a0\'a0\'a0\'a0 * stores one data element, and has left and right sub-tree pointer which\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb3 \strokec8 \'a0\'a0\'a0\'a0 * may be null. The node is a "dumb" nested class -- we just use it for\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb3 \strokec8 \'a0\'a0\'a0\'a0 * storage; it does not have any methods.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb3 \strokec8 \'a0\'a0\'a0\'a0 */\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 private
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 static
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 class
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0Node \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 Node\'a0\cf9 \strokec9 left\cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 Node\'a0\cf9 \strokec9 right\cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 int
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0\cf9 \strokec9 data\cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 Node(
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 int
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0newData) \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \strokec9 left\cf2 \strokec2 \'a0=\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 null
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \strokec9 right\cf2 \strokec2 \'a0=\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 null
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \strokec9 data\cf2 \strokec2 \'a0= newData;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\cf5 \strokec5 /**\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 * Creates an empty binary tree\'a0\cf10 \strokec10 --\cf5 \strokec5 \'a0a null root pointer.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 */\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 public
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0BinaryTree() \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \strokec9 root\cf2 \strokec2 \'a0=\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 null
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 ;\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\cf5 \strokec5 /**\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 *\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf6 \strokec6 TODO
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \strokec5 : Please implement this method.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 *\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf6 \strokec6 @return
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \strokec5 \'a0The maximum depth of this tree.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 */\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 public
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 int
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0\cb11 getMaxDepth\cb3 () \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f4\fs24 \AppleTypeServices \cb1 return(maxDepth(root));
+\f5 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4 \cf2 		\}\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 	private int maxDepth(Node node) \{
+\f5 \uc0\u8232 
+\f4 \'a0 		if (node==null) \{
+\f5 \uc0\u8232 
+\f4 \'a0\'a0\'a0 			return(0);
+\f5 \uc0\u8232 
+\f4 \'a0 			\}
+\f5 \uc0\u8232 
+\f4 \'a0 		else \{
+\f5 \uc0\u8232 
+\f4 \'a0\'a0\'a0 			int lDepth = maxDepth(node.left);
+\f5 \uc0\u8232 
+\f4 \'a0\'a0\'a0 			int rDepth = maxDepth(node.right);
+\f5 \uc0\u8232 
+\f4 		\'a0\'a0\'a0 return(Math.max(lDepth, rDepth) + 1);
+\f5 \uc0\u8232 
+\f4 \'a0 			\}
+\f5 \uc0\u8232 
+\f4 		\}
+\f5 \uc0\u8232 \'a0\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0
+\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \strokec5 /**\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 * Inserts the given data into the binary tree. Uses a recursive helper.\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 */\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 public
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 void
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0insert(
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 int
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0data) \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \strokec9 root\cf2 \strokec2 \'a0= insert(\cf9 \strokec9 root\cf2 \strokec2 , data);\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0
+\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\cf5 \strokec5 /**\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 * Recursive insert\'a0\cf10 \strokec10 --\cf5 \strokec5 \'a0given a node pointer, recur down and insert the given\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 * data into the tree. Returns the new node pointer (the standard way to\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 * communicate a changed pointer back to the caller).\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs21\fsmilli10667 \AppleTypeServices\AppleTypeServicesF65539 \cf5 \cb3 \strokec5 \'a0\'a0\'a0\'a0 */\AppleTypeServices \cf2 \strokec2 \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 private
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0Node insert(Node node,\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 int
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0data) \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 if
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0(node ==\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 null
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 ) \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 node =\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 new
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0Node(data);\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 else
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0\{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 if
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0(data <= node.\cf9 \strokec9 data\cf2 \strokec2 ) \{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 node.\cf9 \strokec9 left\cf2 \strokec2 \'a0= insert(node.\cf9 \strokec9 left\cf2 \strokec2 , data);\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 else
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0\{\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 node.\cf9 \strokec9 right\cf2 \strokec2 \'a0= insert(node.\cf9 \strokec9 right\cf2 \strokec2 , data);\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\b \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 return
+\f3\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 \'a0(node);\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \'a0\'a0\'a0 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+
+\f3\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cb3 \}\AppleTypeServices \'a0
+\f1\fs24 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \
+\
+\
+\
+}
